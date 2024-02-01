@@ -32,8 +32,9 @@ height: 100vh;
 
 	<p id="secret">Text</p>
 	<script>
-document.getElementById("secret") = "${{SECRET}}"
-		
+		if (${{SECRET}} == "party") {
+document.getElementById("secret") = "hello";
+		}
 	</script>
 
 </body>
